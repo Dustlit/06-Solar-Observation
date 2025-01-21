@@ -68,8 +68,7 @@ document.addEventListener("DOMContentLoaded", () => {
         })
         .then(response => response.json())
         .then(data => {
-            alert(`Thank you for registering, ${name}!\nYour data has been successfully submitted.`);
-            window.location.href = "thankyou.html";
+            window.location.href = "thankyou.html"; // Redirect to thankyou.html
         })
         .catch(error => {
             console.error("Error submitting data to SheetDB: ", error);
