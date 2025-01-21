@@ -19,22 +19,19 @@
         <p style="font-size: 20px;">with</p>
         <h2 style="font-family: 'Burtons'; font-size: 30px;">Dedicated Solar Telescope</h2>
 
-        <h2><span style="color: #ff6600;">Join us on January 04th - 05th at Devadas Observatory, Guindy Chennai for an unforgettable Solar Observation event.</span></h2>
+        <h2><span style="color: #ff6600;">Join us on January 25th - 26th at Tambaram, Chennai for an unforgettable Solar Observation event.</span></h2>
         <h2><span style="color: #ff6600;">Experience Our Nearest Star with powerful telescopes</span></h2>
-
-        <h3><u>Inclusions:</u></h3>
-        <p>Sun Observation & Observatory Visit</p>
 
         <p><u>Package Details:</u></p>
         
         <p>Regular Price Per Person : ₹500/-</p>
-		<p>Kids under 10 years old: Free Admission</p>
+		<p>Kids under 10 years old: ₹100/-</p>
 
         <p><u>Disclaimer:</u></p>
         <p>The occurrence of the event relies on weather conditions.</p>
-        <p>If the weather condition is not good, we will reschedule the event.</p>
-        <p>Date: <span style="color: #ff6600;">04th - 05th January 2025, 11:00 AM - 01:00 PM</span></p>
-        <p>Location: <a href="https://maps.app.goo.gl/YZhs7XzFACym1L9n9" target="_blank" style="color: #ff6600;">Devadas Observatory</a></p>
+        <p>The event will be rescheduled if the weather is unfavorable.</p>
+        <p>Date: <span style="color: #ff6600;">25th - 26th January 2025, 03:00 PM - 05:00 PM</span></p>
+        <p>Location: <a href="https://maps.app.goo.gl/NFVxJFFQ877ncBHF9" target="_blank" style="color: #ff6600;">Dustlit - Event Venue</a></p>
 		 </section>
 		
 		<section class="container">
@@ -77,18 +74,22 @@
             <input type="text" id="phone" name="phone" required maxlength="10" pattern="\d{10}" placeholder="Enter 10-digit phone number">
         
             <label for="attendees">Number of Attendees:</label>
-            <input type="number" id="attendees" name="attendees" required min="1" placeholder="Enter number of attendees" oninput="calculateAmount()">
-            
+            <input type="number" id="attendees" name="adults" required min="0" placeholder="Enter number of adults" oninput="calculateAmount()">
+        
+            <label for="kids">Number of Kids (under 10):</label>
+            <input type="number" id="kids" name="kids" value="0" placeholder="Enter number of kids" oninput="calculateAmount()">
+        
             <label>Select Event Date:</label>
-    <div class="radio-group">
-        <label>
-            <input type="radio" name="event_date" value="04th January 2025">
-            04th January 2025 (Saturday)
-          </label>
-        <label>
-            <input type="radio" name="event_date" value="05th January 2025">05th January 2025 (Sunday)
-        </label>
-
+            <div class="radio-group">
+                <label>
+                    <input type="radio" name="event_date" value="25th January 2025">
+                    25th January 2025 (Saturday)
+                </label>
+                <label>
+                    <input type="radio" name="event_date" value="26th January 2025">26th January 2025 (Sunday)
+                </label>
+            </div>
+        
             <p id="amount">Total Amount: ₹0</p>
         
             <div class="payment-section">
@@ -104,8 +105,6 @@
                     <p>UPI Number: <span id="upiNumber2">9585866980</span></p>
                     <button type="button" id="copyButton2">Copy UPI</button>
                 </div>
-            </div>
-            
             </div>
         
             <button type="submit" id="submitButton">Submit</button>
